@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="Lanpuda.Account.UI.Login.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Lanpuda.Account.UI.Login"
+             mc:Ignorable="d" 
+             xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" 
+             xmlns:hc="https://handyorg.github.io/handycontrol" 
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             d:DesignHeight="900" d:DesignWidth="1600">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:KeyToCommand KeyGesture="Enter" Command="{Binding LoginAsyncCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <Grid Background="{StaticResource AntDesign.PrimaryBackgroundColorBrush}">
+        <Grid IsEnabled="{Binding IsLoading,Converter={StaticResource Boolean2BooleanReConverter}}">
+            <Grid.Background>
+                <ImageBrush ImageSource="{svgc:SvgImage /Assets/Images/LoginViewBack.svg}"/>
+            </Grid.Background>
+            <Grid Width="420" Height="500">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="48"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Image Source="{svgc:SvgImage /Assets/Images/logo-color.svg}" Width="44" Height="44" />
+                    <TextBlock Text="蓝普达智能制造" FontSize="33" VerticalAlignment="Center"></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="1" VerticalAlignment="Center">
+                    <TextBlock Text="稳定、高效、一站式管理管理您的业务,轻松实现数字化转型" FontSize="14" Style="{StaticResource TextBlockDefaultSecLight}"></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="2" HorizontalAlignment="Center">
+                    <TextBlock Text="用户名密码登录"   FontSize="16" Foreground="#FF1890FF" ></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <TextBox Text="{Binding Model.UserName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
+                                hc:InfoElement.Placeholder="请输入用户名" Style="{StaticResource TextBoxExtend}" Height="40"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <hc:PasswordBox hc:InfoElement.Placeholder="请输入密码"
+                                    UnsafePassword="{Binding Model.Password,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
+                                    IsSafeEnabled="False"
+                                    VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="40" >
+                    </hc:PasswordBox>
+                </StackPanel>
+                <!--<StackPanel Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <CheckBox IsChecked="{Binding Model.RememberMe}" Content="记住我"></CheckBox>
+                </StackPanel>-->
+
+                <StackPanel Grid.Row="6" HorizontalAlignment="Stretch">
+                    <Button Command="{Binding LoginAsyncCommand}" Content="登录" Height="40" Style="{StaticResource ButtonPrimary}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></Button>
+                </StackPanel>
+
+                <StackPanel Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <TextBlock Text="Copyright 2022 Lanpuda V1.0" Style="{StaticResource TextBlockDefaultSecLight}" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <hc:LoadingCircle Visibility="{Binding IsLoading, UpdateSourceTrigger=PropertyChanged,Converter={dxmvvm:BooleanToVisibilityConverter}}"/>
+    </Grid>
+</UserControl>

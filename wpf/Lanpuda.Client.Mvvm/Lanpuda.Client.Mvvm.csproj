@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Configurations>Debug;Release;发布</Configurations>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Lanpuda</Authors>
+    <PackageIcon></PackageIcon>
+    <Description>Mvvm support</Description>
+    <Version>$(VersionPrefix)8.1.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpressMvvm" Version="22.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lanpuda.Client.Common\Lanpuda.Client.Common.csproj" />
+    <ProjectReference Include="..\Lanpuda.Client.Widget\Lanpuda.Client.Widget.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>

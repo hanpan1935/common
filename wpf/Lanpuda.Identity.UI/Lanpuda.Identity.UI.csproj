@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Configurations>Debug;Release;发布</Configurations>
+    <Version>$(VersionPrefix)8.1.3</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Lanpuda</Authors>
+    <Title>$(AssemblyName)</Title>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Identity.HttpApi.Client" Version="8.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lanpuda.Client.Theme\Lanpuda.Client.Theme.csproj" />
+    <ProjectReference Include="..\Lanpuda.PermissionManagement.UI\Lanpuda.PermissionManagement.UI.csproj" />
+  </ItemGroup>
+
+</Project>

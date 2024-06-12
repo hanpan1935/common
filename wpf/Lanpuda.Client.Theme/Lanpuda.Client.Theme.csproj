@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Title>Lanpuda.Client.Theme</Title>
+    <Description>Lanpuda wpf theme</Description>
+    <PackageIcon></PackageIcon>
+    <Configurations>Debug;Release;发布</Configurations>
+    <Company>$(Authors)</Company>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Lanpuda</Authors>
+    <AssemblyVersion></AssemblyVersion>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Version>$(VersionPrefix)8.1.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\StartupServices\**" />
+    <EmbeddedResource Remove="Services\StartupServices\**" />
+    <None Remove="Services\StartupServices\**" />
+    <Page Remove="Services\StartupServices\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\DefaultAvatar.png" />
+    <None Remove="Assets\Images\logo-full.png" />
+    <None Remove="Assets\Images\logo-full.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Localizations\Lang.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Lang.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Localizations\Lang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HandyControl" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lanpuda.Client.Mvvm\Lanpuda.Client.Mvvm.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\DefaultAvatar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\logo-full.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\logo-full.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

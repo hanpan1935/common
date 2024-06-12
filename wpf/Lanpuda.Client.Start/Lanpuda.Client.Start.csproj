@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lanpuda.Account.UI\Lanpuda.Account.UI.csproj" />
+    <ProjectReference Include="..\Lanpuda.Client.Theme\Lanpuda.Client.Theme.csproj" />
+    <ProjectReference Include="..\Lanpuda.Identity.UI\Lanpuda.Identity.UI.csproj" />
+    <ProjectReference Include="..\Lanpuda.PermissionManagement.UI\Lanpuda.PermissionManagement.UI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanpuda.Client.Common", "Lanpuda.Client.Common\Lanpuda.Client.Common.csproj", "{5D7FDBB6-6AB0-4D42-825C-053171A1CFD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanpuda.Client.Mvvm", "Lanpuda.Client.Mvvm\Lanpuda.Client.Mvvm.csproj", "{A6B9BEAD-4115-4D0E-A375-58D5E393133C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanpuda.Client.Widget", "Lanpuda.Client.Widget\Lanpuda.Client.Widget.csproj", "{A302540A-9C34-4890-99E5-E90E805B0647}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanpuda.Client.Theme", "Lanpuda.Client.Theme\Lanpuda.Client.Theme.csproj", "{0B9D4EDF-0F3B-4B49-9501-298DC6A9C320}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanpuda.Identity.UI", "Lanpuda.Identity.UI\Lanpuda.Identity.UI.csproj", "{F9A0D573-F017-49EE-932F-7420A08015BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanpuda.Account.UI", "Lanpuda.Account.UI\Lanpuda.Account.UI.csproj", "{B3EA8525-C9C2-4258-8FC2-1A0DE014C4F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanpuda.PermissionManagement.UI", "Lanpuda.PermissionManagement.UI\Lanpuda.PermissionManagement.UI.csproj", "{92D818A3-4EF3-4445-9D51-70BC25EC5AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanpuda.Client.Start", "Lanpuda.Client.Start\Lanpuda.Client.Start.csproj", "{B2161C43-B173-4173-B718-51430EDC88C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		发布|Any CPU = 发布|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D7FDBB6-6AB0-4D42-825C-053171A1CFD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7FDBB6-6AB0-4D42-825C-053171A1CFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7FDBB6-6AB0-4D42-825C-053171A1CFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7FDBB6-6AB0-4D42-825C-053171A1CFD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7FDBB6-6AB0-4D42-825C-053171A1CFD4}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{5D7FDBB6-6AB0-4D42-825C-053171A1CFD4}.发布|Any CPU.Build.0 = 发布|Any CPU
+		{A6B9BEAD-4115-4D0E-A375-58D5E393133C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B9BEAD-4115-4D0E-A375-58D5E393133C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B9BEAD-4115-4D0E-A375-58D5E393133C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B9BEAD-4115-4D0E-A375-58D5E393133C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B9BEAD-4115-4D0E-A375-58D5E393133C}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{A6B9BEAD-4115-4D0E-A375-58D5E393133C}.发布|Any CPU.Build.0 = 发布|Any CPU
+		{A302540A-9C34-4890-99E5-E90E805B0647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A302540A-9C34-4890-99E5-E90E805B0647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A302540A-9C34-4890-99E5-E90E805B0647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A302540A-9C34-4890-99E5-E90E805B0647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A302540A-9C34-4890-99E5-E90E805B0647}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{A302540A-9C34-4890-99E5-E90E805B0647}.发布|Any CPU.Build.0 = 发布|Any CPU
+		{0B9D4EDF-0F3B-4B49-9501-298DC6A9C320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9D4EDF-0F3B-4B49-9501-298DC6A9C320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9D4EDF-0F3B-4B49-9501-298DC6A9C320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9D4EDF-0F3B-4B49-9501-298DC6A9C320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B9D4EDF-0F3B-4B49-9501-298DC6A9C320}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{0B9D4EDF-0F3B-4B49-9501-298DC6A9C320}.发布|Any CPU.Build.0 = 发布|Any CPU
+		{F9A0D573-F017-49EE-932F-7420A08015BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A0D573-F017-49EE-932F-7420A08015BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A0D573-F017-49EE-932F-7420A08015BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A0D573-F017-49EE-932F-7420A08015BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A0D573-F017-49EE-932F-7420A08015BA}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{F9A0D573-F017-49EE-932F-7420A08015BA}.发布|Any CPU.Build.0 = 发布|Any CPU
+		{B3EA8525-C9C2-4258-8FC2-1A0DE014C4F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3EA8525-C9C2-4258-8FC2-1A0DE014C4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3EA8525-C9C2-4258-8FC2-1A0DE014C4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3EA8525-C9C2-4258-8FC2-1A0DE014C4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3EA8525-C9C2-4258-8FC2-1A0DE014C4F3}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{B3EA8525-C9C2-4258-8FC2-1A0DE014C4F3}.发布|Any CPU.Build.0 = 发布|Any CPU
+		{92D818A3-4EF3-4445-9D51-70BC25EC5AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D818A3-4EF3-4445-9D51-70BC25EC5AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D818A3-4EF3-4445-9D51-70BC25EC5AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D818A3-4EF3-4445-9D51-70BC25EC5AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D818A3-4EF3-4445-9D51-70BC25EC5AC2}.发布|Any CPU.ActiveCfg = 发布|Any CPU
+		{92D818A3-4EF3-4445-9D51-70BC25EC5AC2}.发布|Any CPU.Build.0 = 发布|Any CPU
+		{B2161C43-B173-4173-B718-51430EDC88C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2161C43-B173-4173-B718-51430EDC88C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2161C43-B173-4173-B718-51430EDC88C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2161C43-B173-4173-B718-51430EDC88C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2161C43-B173-4173-B718-51430EDC88C8}.发布|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2161C43-B173-4173-B718-51430EDC88C8}.发布|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BC90253-5A43-4824-8070-8514B05788A3}
+	EndGlobalSection
+EndGlobal
